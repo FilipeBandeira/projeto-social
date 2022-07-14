@@ -9,6 +9,7 @@
 html, body {
     height: 100vh;
     width: 100vw;
+    /* Altura e largura total do navegador */
     background-color: black;
 }
 
@@ -16,6 +17,7 @@ body {
     background:  url('../imagens/fundo-madeira.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
+    /* Para não ter rolagem de tela */
 }
 
 main {
@@ -24,7 +26,7 @@ main {
 }
 
 section#telefone {
-    /* Padrão para deixar um caixa no meio */
+    /* Padrão para deixar uma caixa no meio */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -36,9 +38,34 @@ section#telefone {
 }
 
 iframe#tela {
+    /* Para colocar a img na posição correta dentro do celular */
     position: relative;
     top: 80px;
     left: 22px;
-    width: 269px;
+    width: 267px;
     height: 471px;
+}
+
+section#redes-sociais{
+    text-align: right;
+    /* Colocar os botões do lado direito  */
+}
+
+section#redes-sociais img {
+    /* Ajustando os ícones */
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    /* para deixar os ícones redondos */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    /* sombra */
+    box-sizing: border-box;
+    /* Para a imagem permanecer dentro da caixa */
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba (0, 0, 0, 0.623);
+    transition: transform .3s, border .4s;
 }
